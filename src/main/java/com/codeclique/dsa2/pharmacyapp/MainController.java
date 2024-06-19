@@ -1,10 +1,15 @@
 package com.codeclique.dsa2.pharmacyapp;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.fxml.FXML;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -24,6 +29,45 @@ public class MainController implements Initializable {
     private TextField stockLevelField;
     @FXML
     private Button addDrugButton;
+
+    @FXML
+    private Label welcomeText;
+
+    private Stage primaryStage; // Reference to the main application stage
+
+
+    public void setPrimaryStage(Stage primaryStage) {
+        this.primaryStage = primaryStage;
+    }
+    public void showLoginPage() {
+        try {
+            // Load login FXML
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
+            Parent loginPage = loader.load();
+
+            // Show login scene
+            Scene loginScene = new Scene(loginPage);
+            primaryStage.setScene(loginScene);
+            primaryStage.show();
+
+        } catch (Exception e) {
+            // Handle loading exceptions
+        }
+    }
+
+    // Placeholder for handling successful login
+    public void loginSuccessful() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("main_app.fxml")); // Replace with your main app FXML file name
+            Parent mainApp = loader.load();
+            // Show main app scene
+            Scene mainScene = new Scene(mainApp);
+            primaryStage.setScene(mainScene);
+
+        } catch (Exception e) {
+            // Handle loading exceptions
+        }
+    }
 
     public void setDrugManager(DrugManager drugManager) {
         this.drugManager = drugManager;

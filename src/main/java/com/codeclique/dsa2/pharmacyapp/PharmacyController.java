@@ -1,10 +1,14 @@
 package com.codeclique.dsa2.pharmacyapp;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class PharmacyController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class PharmacyController implements Initializable {
     @FXML
     private TextField customerIDField;
 
@@ -16,8 +20,9 @@ public class PharmacyController {
     private DrugManager drugManager; // Instance of DrugManager class (injected or created)
     @FXML
     private Button searchButton;
-    public void initialize() {
-        // Initialize UI elements and bindings
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
         searchButton.setOnAction(event -> searchDrug()); // Add event listener for search button
     }
     private void searchDrug() {

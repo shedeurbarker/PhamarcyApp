@@ -9,6 +9,7 @@ module com.codeclique.dsa2.pharmacyapp {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.sql;
 
     opens com.codeclique.dsa2.pharmacyapp to javafx.fxml;
     exports com.codeclique.dsa2.pharmacyapp;
