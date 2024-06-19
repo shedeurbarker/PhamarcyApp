@@ -118,7 +118,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.codeclique.dsa2.pharmacyapp/com.codeclique.dsa2.pharmacyapp.HelloApplication
+                                com.codeclique.dsa2.pharmacyapp/com.codeclique.dsa2.pharmacyapp.Main
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
