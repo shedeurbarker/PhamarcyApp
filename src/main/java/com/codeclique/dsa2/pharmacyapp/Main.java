@@ -5,14 +5,14 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         MainController mainController = new MainController();
         LoginController loginController = new LoginController();
 
-        mainController.setPrimaryStage(primaryStage);
+        loginController.setPrimaryStage(primaryStage);
         loginController.setMainController(mainController); // Connect controllers
 
-        mainController.showLoginPage();
+        mainController.showLoginPage(primaryStage);
     }
 
     public static void main(String[] args) {
@@ -20,6 +20,3 @@ public class Main extends Application {
     }
 
 }
-
-// DB pass: 3l1*jWXgVRD*Jh6j
-// DB User: phamD

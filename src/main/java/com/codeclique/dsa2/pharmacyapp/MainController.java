@@ -11,6 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -30,40 +31,32 @@ public class MainController implements Initializable {
     @FXML
     private Button addDrugButton;
 
-    @FXML
-    private Label welcomeText;
-
-    private Stage primaryStage; // Reference to the main application stage
-
-
-    public void setPrimaryStage(Stage primaryStage) {
-        this.primaryStage = primaryStage;
-    }
-    public void showLoginPage() {
+    public void showLoginPage(Stage primaryStage) {
         try {
             // Load login FXML
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
-            Parent loginPage = loader.load();
-
-            // Show login scene
-            Scene loginScene = new Scene(loginPage);
-            primaryStage.setScene(loginScene);
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("login.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+            primaryStage.setTitle("Pharmacy Login");
+            primaryStage.setScene(scene);
             primaryStage.show();
 
         } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Error 1");
             // Handle loading exceptions
         }
     }
 
-    // Placeholder for handling successful login
-    public void loginSuccessful() {
+    public void loginSuccessful(Stage primaryStage) {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("main_app.fxml")); // Replace with your main app FXML file name
-            Parent mainApp = loader.load();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("main_app.fxml")); // Replace with your main app FXML file name
+            Parent mainApp = fxmlLoader.load();
             // Show main app scene
             Scene mainScene = new Scene(mainApp);
-            primaryStage.setScene(mainScene);
-
+            Scene scene = new Scene(fxmlLoader.load(), 600, 450);
+            primaryStage.setTitle("Pharmacy Login");
+            primaryStage.setScene(scene);
+            primaryStage.show();
         } catch (Exception e) {
             // Handle loading exceptions
         }
