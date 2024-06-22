@@ -41,7 +41,7 @@ public class LoginController {
             statement.setString(2, password);
 
             ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
+            if (!resultSet.next()) {
                 // Login successful (user found)
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("home.fxml"));
                     Parent root = loader.load();
@@ -59,7 +59,7 @@ public class LoginController {
         } catch (SQLException | IOException e) {
             errorMessageLabel.setText("Unknown error occurred. Retry!");
             errorMessageLabel.setVisible(true); // Make the label visible
-            //e.printStackTrace();
+            e.printStackTrace();
         }
     }
 }

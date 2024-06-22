@@ -2,25 +2,25 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TextArea?>
-
-
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox spacing="10.0" prefHeight="400.0" prefWidth="600.0" fx:controller="com.codeclique.dsa2.pharmacyapp.MainController"  xmlns:fx="http://javafx.com/fxml">
-    <Label text="Add New Drug" />
-    <TextField fx:id="drugCodeField" promptText="Drug Code"/>
-    <TextField fx:id="nameField" promptText="Drug Name" />
-    <TextArea fx:id="descriptionField" promptText="Description" />
-    <HBox spacing="10.0">
-        <Label text="Price:" />
-        <TextField fx:id="priceField" promptText="0.00" />
-    </HBox>
-    <HBox spacing="10.0">
-        <Label text="Stock Level:" />
-        <TextField fx:id="stockLevelField" promptText="0" />
-    </HBox>
-    <Button text="Add Drug" onAction="#addDrug" />
-</VBox>
+<SplitPane fx:controller="com.codeclique.dsa2.pharmacyapp.HomeController" dividerPositions="0.29797979797979796"
+           maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+           prefWidth="600.0" xmlns:fx="http://javafx.com/fxml">
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+        <VBox layoutY="-1.0" prefHeight="398.0" prefWidth="175.0"/>
+    </AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+        <Button fx:id="logoutButton" onAction="#logoutButtonClicked" layoutX="360.0" layoutY="2.0"
+                mnemonicParsing="false" text="Logout"/>
+        <Label layoutY="6.0" text="THe Pharmacy App" textFill="#6ebed4">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <VBox layoutY="39.0" prefHeight="359.0" prefWidth="417.0"/>
+    </AnchorPane>
+</SplitPane>
