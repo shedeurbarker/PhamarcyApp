@@ -15,14 +15,6 @@ public class Drug {
 
     private double price;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getDrugCode() {
         return drugCode;
     }
@@ -31,8 +23,44 @@ public class Drug {
         this.drugCode = drugCode;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public int getStockLevel() {
+        return stockLevel;
+    }
+
     public void setStockLevel(int stockLevel) {
         this.stockLevel = stockLevel;
+    }
+
+    public List<String> getSupplierIDs() {
+        return supplierIDs;
+    }
+
+    public void setSupplierIDs(List<String> supplierIDs) {
+        this.supplierIDs = supplierIDs;
+    }
+
+    public TreeMap<LocalDate, Purchase> getPurchaseHistory() {
+        return purchaseHistory;
+    }
+
+    public void setPurchaseHistory(TreeMap<LocalDate, Purchase> purchaseHistory) {
+        this.purchaseHistory = purchaseHistory;
     }
 
     private int stockLevel;
@@ -58,9 +86,5 @@ public class Drug {
         if (!supplierIDs.contains(supplierID)) { // Check for duplicate IDs
             supplierIDs.add(supplierID);
         }
-    }
-
-    public int getStockLevel() {
-        return stockLevel;
     }
 }
