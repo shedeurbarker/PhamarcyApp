@@ -10,17 +10,19 @@
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0"  xmlns:fx="http://javafx.com/fxml" fx:controller="com.codeclique.dsa2.pharmacyapp.LoginController">
-   <Pane prefHeight="400.0" prefWidth="600.0" />
-    <Label layoutX="183.0" layoutY="162.0" text="Username:" />
-    <TextField id="username" fx:id="usernameField" cache="true" layoutX="263.0" layoutY="157.0" />
-    <Label layoutX="183.0" layoutY="202.0" text="Password:" />
-    <PasswordField id="password" fx:id="passwordField" layoutX="263.0" layoutY="197.0" />
-    <Label fx:id="errorMessageLabel" layoutX="224.0" layoutY="200.0" textFill="red" prefWidth="150.0" visible="false" wrapText="true" />
-    <Button fx:id="loginButton" defaultButton="true" layoutX="263.0" layoutY="242.0" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="94.0" text="Login" />
-    <Label layoutX="263.0" layoutY="305.0" text="Forgot Password?" textFill="#0000ff" underline="true" />
-    <Label layoutX="146.0" layoutY="46.0" prefHeight="75.0" prefWidth="308.0" text="Welcome to Pharmacy App" textFill="#3eb8e1">
-      <font>
-         <Font size="24.0" />
-      </font></Label>
+    <children>
+        <Label layoutX="183.0" layoutY="162.0" text="Username:" />
+        <TextField id="username" fx:id="usernameField" cache="true" layoutX="263.0" layoutY="157.0" />
+        <Label layoutX="183.0" layoutY="202.0" text="Password:" />
+        <PasswordField id="password" fx:id="passwordField" layoutX="263.0" layoutY="197.0" />
+        <Label fx:id="errorMessageLabel" layoutX="224.0" layoutY="200.0" textFill="red" prefWidth="150.0" visible="false" wrapText="true" />
+        <Button fx:id="loginButton" defaultButton="true" layoutX="263.0" layoutY="242.0" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="94.0" text="Login" />
+        <Label layoutX="263.0" layoutY="305.0" text="Forgot Password?" textFill="#0000ff" underline="true" />
+        <Label layoutX="146.0" layoutY="46.0" prefHeight="75.0" prefWidth="308.0" text="Welcome to Pharmacy App" textFill="#3eb8e1">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
+    </children>
+
    <Accordion />
 </AnchorPane>
