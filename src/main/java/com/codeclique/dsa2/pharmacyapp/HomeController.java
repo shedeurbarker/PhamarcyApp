@@ -62,13 +62,36 @@ public class HomeController {
         // Call DrugManager's addDrug method
         drugManager.addDrug(newDrug);
 
-         // Clear input fields or display success message
             drugCodeField.clear();
             nameField.clear();
             descriptionField.clear();
             priceField.clear();
             stockLevelField.clear();
-        //    // Alternatively, display a success message
+        //! todo - display a success message
+
+    }
+
+    public void searchButton() throws SQLException {
+        // Get user input from text fields
+        String drugCode = drugCodeField.getText();
+        String name = nameField.getText();
+        String description = descriptionField.getText();
+        double price = Double.parseDouble(priceField.getText()); // Convert to double
+        int stockLevel = Integer.parseInt(stockLevelField.getText()); // Convert to int
+
+        // ! TODo we need to authenticate user data provided for validity first and avoid duplicates
+
+        // create new drug object
+        Drug newDrug = new Drug(drugCode, name, description, price, stockLevel);
+        // Call DrugManager's addDrug method
+        drugManager.addDrug(newDrug);
+
+        drugCodeField.clear();
+        nameField.clear();
+        descriptionField.clear();
+        priceField.clear();
+        stockLevelField.clear();
+        //! todo - display a success message
 
     }
 

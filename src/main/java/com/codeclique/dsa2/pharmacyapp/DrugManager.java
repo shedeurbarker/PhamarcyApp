@@ -14,7 +14,7 @@ public class DrugManager {
         drugs = new HashMap<>();
     }
 
-    public void addDrug(Drug newDrug) throws SQLException {
+    public boolean addDrug(Drug newDrug) throws SQLException {
         // save new drug added into database
         Connection connection = dbQueries.openConnection();
         PreparedStatement statement = connection
@@ -31,13 +31,14 @@ public class DrugManager {
         if(result.next()) {
             // successfully added to database - add drug to stack
             drugs.put(newDrug.getDrugCode(), newDrug);
-
+            return true;
             // ! todo - implement UI update
         }
         else {
             // ! todo - implement UI error alert
             System.out.println("to be replaced by a visual response");
         }
+        return false;
     }
 
     public List<Drug> searchDrugs(String searchTerm) {
@@ -83,7 +84,6 @@ public class DrugManager {
     public void recordSale(String drugCode, int quantity, String customerID) throws InsufficientStockException {
         Drug drug = drugs.get(drugCode);
         if (drug == null) {
-
             // ! todo replace with UI response
             throw new IllegalArgumentException("Drug not found: " + drugCode);
         }
@@ -99,8 +99,6 @@ public class DrugManager {
         // (Optional) Add the Sale object to a list or data structure for future reference
 //        salesList.add(newSale); // Assuming you have a list to store sales
     }
-
-
 
     public List<String> getInventoryReport() {
         List<String> report = new ArrayList<>();
