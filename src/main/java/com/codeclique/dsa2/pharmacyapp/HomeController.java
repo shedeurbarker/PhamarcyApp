@@ -7,11 +7,13 @@ import javafx.fxml.FXML;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class HomeController {
+    @FXML private GridPane buttonGrid;
     private DrugManager drugManager; // Reference to DrugManager instance
 
     @FXML private TextField drugCodeField;
@@ -34,7 +36,6 @@ public class HomeController {
 
     public void logoutButtonClicked() throws IOException {
 // logout and load login
-        // Load the login scene
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
         Parent root = loader.load();
         Stage stage = (Stage) logoutButton.getScene().getWindow();

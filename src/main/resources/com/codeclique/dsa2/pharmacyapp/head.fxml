@@ -1,0 +1,5 @@
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane fx:controller="com.codeclique.dsa2.pharmacyapp.HomeController"
+            maxHeight="-Infinity" maxWidth="-Infinity"
+            minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns:fx="http://javafx.com/fxml"></AnchorPane>
