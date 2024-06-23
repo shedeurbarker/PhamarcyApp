@@ -1,42 +1,36 @@
 package com.codeclique.dsa2.pharmacyapp;
 
+/*
+Arther: Anthony Barker
+Description: This class represents a drug with its details and a list to store associated supplier IDs.
+Date: 20th Jun, 2024
+ */
+
 import java.time.LocalDate;
 import java.util.List;
 import java.util.TreeMap;
 
 public class Drug {
-    private String drugCode; // Unique identifier
-    private String name;
-    private String description;
+    private final String drugCode; // Unique identifier
+    private final String name;
+    private final String description;
 
     public double getPrice() {
         return price;
-    }
-
-    private double price;
-
-    public String getDrugCode() {
-        return drugCode;
-    }
-
-    public void setDrugCode(String drugCode) {
-        this.drugCode = drugCode;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    private final double price;
+
+    public String getDrugCode() {
+        return drugCode;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public int getStockLevel() {
@@ -47,21 +41,21 @@ public class Drug {
         this.stockLevel = stockLevel;
     }
 
-    public List<String> getSupplierIDs() {
-        return supplierIDs;
-    }
+//    public List<String> getSupplierIDs() {
+//        return supplierIDs;
+//    }
+//
+//    public void setSupplierIDs(List<String> supplierIDs) {
+//        this.supplierIDs = supplierIDs;
+//    }
 
-    public void setSupplierIDs(List<String> supplierIDs) {
-        this.supplierIDs = supplierIDs;
-    }
-
-    public TreeMap<LocalDate, Purchase> getPurchaseHistory() {
-        return purchaseHistory;
-    }
-
-    public void setPurchaseHistory(TreeMap<LocalDate, Purchase> purchaseHistory) {
-        this.purchaseHistory = purchaseHistory;
-    }
+//    public TreeMap<LocalDate, Purchase> getPurchaseHistory() {
+//        return purchaseHistory;
+//    }
+//
+//    public void setPurchaseHistory(TreeMap<LocalDate, Purchase> purchaseHistory) {
+//        this.purchaseHistory = purchaseHistory;
+//    }
 
     private int stockLevel;
     private List<String> supplierIDs; // List of supplier IDs

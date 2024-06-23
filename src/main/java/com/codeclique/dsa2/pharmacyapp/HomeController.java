@@ -11,10 +11,10 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 public class HomeController {
     @FXML private GridPane buttonGrid;
-    private DrugManager drugManager; // Reference to DrugManager instance
 
     @FXML private TextField drugCodeField;
     @FXML private TextField nameField;
@@ -23,6 +23,10 @@ public class HomeController {
     @FXML private TextField stockLevelField;
     @FXML private Button addDrugButton;
     @FXML private Button logoutButton;
+    private final DrugManager drugManager = new DrugManager(); //Reference to DrugManager instance
+
+    public HomeController() throws SQLException {
+    }
 
     public void initialize() {
         logoutButton.setOnAction(event -> {
@@ -43,19 +47,20 @@ public class HomeController {
         stage.show();
     }
 
-    public void setDrugManager(DrugManager drugManager) {
-        this.drugManager = drugManager;
-    }
-
-    public void addDrug() {
+    public void addDrugButton() throws SQLException {
             // Get user input from text fields
             String drugCode = drugCodeField.getText();
             String name = nameField.getText();
             String description = descriptionField.getText();
             double price = Double.parseDouble(priceField.getText()); // Convert to double
             int stockLevel = Integer.parseInt(stockLevelField.getText()); // Convert to int
+
+        // ! TODo we need to authenticate user data provided for validity first and avoid duplicates
+
+        // create new drug object
+        Drug newDrug = new Drug(drugCode, name, description, price, stockLevel);
         // Call DrugManager's addDrug method
-        drugManager.addDrug(drugCode, name, description, price, stockLevel);
+        drugManager.addDrug(newDrug);
 
          // Clear input fields or display success message
             drugCodeField.clear();

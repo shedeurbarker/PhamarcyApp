@@ -19,9 +19,7 @@ public class LoginController {
     @FXML private PasswordField passwordField;
     @FXML private Button loginButton;
     @FXML private Label errorMessageLabel;
-
-    public LoginController() {
-    }
+    DBQueries qbQueries = new DBQueries();
 
     public void loginButtonClicked() {
 
@@ -29,14 +27,11 @@ public class LoginController {
         String password = passwordField.getText();
 
         try {
-            // Replace with your details
-            String jdbcURL = "jdbc:mysql://localhost:3306/phamarcyApp";
-            // Replace with your database credentials
-            String jdbcUsername = "phamD";
-            String jdbcPassword = "3l1*jWXgVRD*Jh6j";
-            Connection connection = DriverManager.getConnection(jdbcURL, jdbcUsername, jdbcPassword);
+            // Database credentials
+
+            Connection connection = qbQueries.openConnection();
             PreparedStatement statement = connection
-                    .prepareStatement("SELECT * FROM users WHERE username = ? AND password = ?"); // Replace with your table and column names
+                    .prepareStatement("SELECT * FROM users WHERE username = ? AND password = ?");
             statement.setString(1, username);
             statement.setString(2, password);
 
@@ -59,7 +54,6 @@ public class LoginController {
         } catch (SQLException | IOException e) {
             errorMessageLabel.setText("Unknown error occurred. Retry!");
             errorMessageLabel.setVisible(true); // Make the label visible
-            e.printStackTrace();
         }
     }
 }

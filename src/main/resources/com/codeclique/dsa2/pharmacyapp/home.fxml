@@ -11,12 +11,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.codeclique.dsa2.pharmacyapp.HomeController">
+<SplitPane dividerPositions="0.29797979797979796" maxHeight="-Infinity"
+           maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+           prefWidth="600.0" xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.codeclique.dsa2.pharmacyapp.HomeController">
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
         <VBox layoutY="-1.0" prefHeight="398.0" prefWidth="175.0" />
     </AnchorPane>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
-        <Button fx:id="logoutButton" layoutX="360.0" layoutY="2.0" mnemonicParsing="false" onAction="#logoutButtonClicked" text="Logout" />
+        <Button fx:id="logoutButton" layoutX="360.0" layoutY="2.0"
+                mnemonicParsing="false" onAction="#logoutButtonClicked" text="Logout" />
         <Label layoutY="6.0" text="THe Pharmacy App" textFill="#6ebed4">
             <font>
                 <Font size="18.0" />
