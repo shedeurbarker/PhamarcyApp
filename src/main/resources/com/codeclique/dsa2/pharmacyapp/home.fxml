@@ -30,7 +30,7 @@
                </font></Text>
             <HBox alignment="CENTER" prefHeight="58.0" prefWidth="400.0" translateX="12.0">
                <children>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                  <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true">
                      <image>
                         <Image url="@../assets/Vector%20(2).jpg" />
                      </image>
