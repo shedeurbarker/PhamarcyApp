@@ -10,6 +10,7 @@ module com.codeclique.dsa2.pharmacyapp {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires java.sql;
+    requires mysql.connector.j;
 
     opens com.codeclique.dsa2.pharmacyapp to javafx.fxml;
     exports com.codeclique.dsa2.pharmacyapp;

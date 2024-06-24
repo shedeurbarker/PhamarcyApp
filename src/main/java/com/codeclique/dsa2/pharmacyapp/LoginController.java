@@ -26,6 +26,11 @@ public class LoginController {
         String username = usernameField.getText();
         String password = passwordField.getText();
 
+        if(username.isEmpty() || password.isEmpty()) {
+            errorMessageLabel.setText("Enter Username or Password to continue!");
+            errorMessageLabel.setVisible(true); // Make the label visible
+            return;
+        }
         try {
             // Database credentials
 
@@ -38,7 +43,7 @@ public class LoginController {
             ResultSet resultSet = statement.executeQuery();
             if (resultSet.next()) {
                 // Login successful (user found)
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("home.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("phamarcy.fxml"));
                     Parent root = loader.load();
                     Stage stage = (Stage) loginButton.getScene().getWindow();
                     stage.setScene(new Scene(root));
