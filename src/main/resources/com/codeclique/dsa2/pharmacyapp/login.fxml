@@ -16,22 +16,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.codeclique.dsa2.pharmacyapp.LoginController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codeclique.dsa2.pharmacyapp.LoginController">
    <children>
       <SplitPane dividerPositions="0.298" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="209.0">
                <children>
-                  <ImageView fitHeight="410.0" fitWidth="706.0" layoutX="-157.0" pickOnBounds="true">
+                  <ImageView fitHeight="410.0" fitWidth="706.0" layoutX="-157.0" nodeOrientation="INHERIT" pickOnBounds="true" AnchorPane.bottomAnchor="-12.0" AnchorPane.leftAnchor="-157.0" AnchorPane.rightAnchor="-376.0" AnchorPane.topAnchor="0.0">
                      <image>
-                        <Image url="@../../../../../../../../Downloads/christina-victoria-craft-ZHys6xN7sUE-unsplash.jpg" />
+                        <Image url="@../assets/hal-gatewood-iPl3q-gEGzY-unsplash.jpg" />
                      </image>
                   </ImageView>
                </children></AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="419.0" style="-fx-background-color: #ECECE7;">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="419.0" style="-fx-background-color: #83b1e0;">
                <children>
-                  <TextField id="username" fx:id="usernameField" cache="true" layoutX="154.0" layoutY="233.0" />
-                  <Label layoutX="56.1" layoutY="46.0" prefHeight="75.0" prefWidth="332.0" text="Welcome to Pharmacy App" textFill="#da6225">
+                  <TextField id="username" fx:id="usernameField" cache="true" layoutX="154.0" layoutY="180.0" />
+                  <Label layoutX="56.1" layoutY="46.0" prefHeight="75.0" prefWidth="332.0" text="Welcome to Pharmacy App">
                      <font>
                         <Font name="System Bold" size="24.0" />
                      </font>
@@ -40,17 +40,17 @@
                      </padding>
                   </Label>
                   <Label layoutX="73.0" layoutY="239.0" text="Password:" />
-                  <PasswordField id="password" fx:id="passwordField" layoutX="154.0" layoutY="180.0" />
-                   <Label fx:id="errorMessageLabel" layoutX="224.0" layoutY="200.0" textFill="red" prefWidth="150.0" visible="false"
-                          wrapText="true"/>
-                  <Button fx:id="loginButton" defaultButton="true" layoutX="177.0" layoutY="309.0" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: white;" text="Login" textFill="#d06e28" />
-                  <Label layoutX="163.0" layoutY="357.0" text="Forgot Password?" underline="true" />
+                  <PasswordField id="password" fx:id="passwordField" layoutX="154.0" layoutY="233.0" />
+                   <Label fx:id="errorMessageLabel" alignment="TOP_LEFT" layoutX="157.0" layoutY="271.0" prefHeight="39.0" prefWidth="224.0" textFill="red" visible="false" wrapText="true" />
+                  <Button fx:id="loginButton" defaultButton="true" layoutX="177.0" layoutY="309.0" onAction="#loginButtonClicked" prefHeight="25.0" prefWidth="94.0" style="-fx-background-color: white;" text="Login" textFill="#83b1e0" />
+                  <Label layoutX="163.0" layoutY="357.0" text="Forgot Password?" underline="true">
+                     <tooltip>
+                        <Tooltip text="Reset your password" />
+                     </tooltip></Label>
                   <Label layoutX="70.0" layoutY="186.0" text="Username:" />
                </children>
             </AnchorPane>
         </items>
       </SplitPane>
-   
-       <Accordion />
    </children>
 </AnchorPane>
