@@ -12,7 +12,7 @@
             fx:controller="com.codeclique.dsa2.pharmacyapp.LoginController">
 
     <Accordion/>
-    <Label layoutX="183.0" layoutY="162.0" text="Username:"/>
+    <Label layoutX="182.0" layoutY="162.0" text="Username:"/>
     <TextField id="username" fx:id="usernameField" cache="true" layoutX="263.0" layoutY="157.0"/>
     <Label layoutX="183.0" layoutY="202.0" text="Password:"/>
     <PasswordField id="password" fx:id="passwordField" layoutX="263.0" layoutY="197.0"/>
