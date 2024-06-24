@@ -1,5 +1,6 @@
 package com.codeclique.dsa2.pharmacyapp;
 
+import com.mysql.cj.x.protobuf.MysqlxDatatypes;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
