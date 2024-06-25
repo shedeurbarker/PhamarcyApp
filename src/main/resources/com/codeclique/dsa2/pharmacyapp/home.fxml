@@ -22,7 +22,7 @@
 
 <AnchorPane maxHeight="518.0" maxWidth="797.0" minHeight="400.0" minWidth="600.0" prefHeight="518.0" prefWidth="797.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ToolBar maxWidth="797.0" prefHeight="74.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <ToolBar maxWidth="797.0" prefHeight="50.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy App" translateX="10.0" wrappingWidth="146.5390625">
                <font>
