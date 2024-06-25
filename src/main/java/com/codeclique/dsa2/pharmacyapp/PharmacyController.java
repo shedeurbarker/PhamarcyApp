@@ -1,9 +1,16 @@
 package com.codeclique.dsa2.pharmacyapp;
 
+//import javafx.collections.FXCollections;//new
+//import javafx.collections.ObservableList;//new
+
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+
+//import javafx.scene.control.cell.PropertyValueFactory;//new
+//import javafx.scene.control.TableColumn;//new
+//import javafx.scene.control.TableView;//new
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -21,15 +28,40 @@ public class PharmacyController implements Initializable {
     @FXML
     private Button searchButton;
 
+//    @FXML
+//    private TableView<Drug> drugTableView;//new
+//    @FXML
+//    private TableColumn<Drug, String> drugCodeColumn;
+//    @FXML
+//    private TableColumn<Drug, String> drugNameColumn;
+//    @FXML
+//    private TableColumn<Drug, Integer> quantityColumn;
+//    @FXML
+//    private TableColumn<Drug, Double> priceColumn;
+//
+//    private ObservableList<Drug> drugList;//new
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+//y
+
         searchButton.setOnAction(event -> searchDrug()); // Add event listener for search button
     }
     private void searchDrug() {
         // Implement logic to search for drug based on drug code
         String drugCode = drugCodeField.getText();
+//        Drug drug = (Drug) drugManager.searchDrugs(drugCode);
+//        if (drug != null){
+//            drugList.clear();
+//            drugList.add(drug);}
+//        else{
+//            System.out.println("Drug not found");
+//        }
+
         // ... (search logic) ...
     }
+    //
 
     public void recordSale() {
         String drugCode = drugCodeField.getText(); // Retrieve drug code from UI
