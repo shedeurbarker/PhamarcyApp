@@ -47,7 +47,7 @@
                   </Button>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="91.0" spacing="10.0" translateX="130.0">
+            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="91.0" spacing="10.0" translateX="80.0">
                <children>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -67,6 +67,18 @@
                         <Image url="@../assets/Group.png" />
                      </image>
                   </ImageView>
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="56.0" scaleShape="false" style="-fx-background-color: #1F5A84;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="38.0" nodeOrientation="INHERIT">
+                           <image>
+                              <Image url="@../assets/7124045_logout_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
                </children>
             </HBox>
         </items>

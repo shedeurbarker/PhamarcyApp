@@ -128,7 +128,7 @@
                 <Image url="@../assets/Vector%201.png" />
             </image>
         </ImageView>
-      <VBox alignment="CENTER" fillWidth="false" layoutX="79.0" layoutY="175.0" prefHeight="285.0" prefWidth="640.0" spacing="30.0" style="-fx-border-color: D2CDCD; -fx-border-style: solid; -fx-border-radius: 15px;">
+      <VBox alignment="CENTER" fillWidth="false" layoutX="90.0" layoutY="196.0" prefHeight="271.0" prefWidth="625.0" spacing="30.0" style="-fx-border-color: D2CDCD; -fx-border-style: solid; -fx-border-radius: 15px;">
          <children>
             <HBox prefHeight="60.0" prefWidth="405.0" style="-fx-border-style: solid; -fx-border-radius: 10px;" />
             <HBox prefHeight="61.0" prefWidth="404.0" style="-fx-border-style: solid; -fx-border-radius: 10px;" />
