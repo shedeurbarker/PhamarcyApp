@@ -20,9 +20,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="518.0" maxWidth="797.0" minHeight="400.0" minWidth="600.0" prefHeight="518.0" prefWidth="797.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="721.0" maxWidth="797.0" minHeight="400.0" minWidth="600.0" prefHeight="585.0" prefWidth="797.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <children>
-        <ToolBar maxWidth="797.0" prefHeight="74.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <ToolBar maxWidth="797.0" prefHeight="60.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <items>
                 <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy App" translateX="10.0" wrappingWidth="146.5390625">
                     <font>
@@ -30,17 +30,17 @@
                     </font></Text>
                 <HBox alignment="CENTER" prefHeight="58.0" prefWidth="400.0" translateX="12.0">
                     <children>
-                        <ImageView fitHeight="37.0" fitWidth="30.0" pickOnBounds="true">
+                        <ImageView fitHeight="34.0" fitWidth="30.0" pickOnBounds="true">
                             <image>
                                 <Image url="@../assets/Vector%20(2).jpg" />
                             </image>
                         </ImageView>
-                        <TextField fx:id="textField" prefHeight="37.0" prefWidth="310.0" promptText="Search drugs" style="-fx-background-image: url=&quot;@../assets/hal-gatewood-iPl3q-gEGzY-unsplash.jpg&quot;;" styleClass="txtSearch.getStyleClass().add(&quot;search-field&quot;);">
+                        <TextField fx:id="textField" prefHeight="34.0" prefWidth="310.0" promptText="Search drugs" style="-fx-background-image: url=&quot;@../assets/hal-gatewood-iPl3q-gEGzY-unsplash.jpg&quot;;" styleClass="txtSearch.getStyleClass().add(&quot;search-field&quot;);">
                             <font>
                                 <Font size="14.0" />
                             </font>
                         </TextField>
-                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #FF5C38;" text="Sale" textFill="WHITE" translateX="20.0">
+                        <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #FF5C38;" text="Sale" textFill="WHITE" translateX="20.0">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
@@ -67,7 +67,7 @@
                                 <Image url="@../assets/Group.png" />
                             </image>
                         </ImageView>
-                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="56.0" scaleShape="false" style="-fx-background-color: #1F5A84;">
+                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="56.0" scaleShape="false" style="-fx-background-color: transparent;">
                      <graphic>
                         <ImageView fitHeight="32.0" fitWidth="38.0" nodeOrientation="INHERIT">
                            <image>
@@ -83,26 +83,26 @@
                 </HBox>
             </items>
         </ToolBar>
-        <HBox alignment="CENTER" layoutX="-9.0" layoutY="85.0" prefHeight="37.0" prefWidth="307.0" spacing="10.0" AnchorPane.leftAnchor="20.0">
+        <HBox alignment="CENTER" layoutX="-9.0" layoutY="85.0" prefHeight="37.0" prefWidth="307.0" spacing="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="83.0">
             <children>
-                <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="DASHBOARD">
+                <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="DASHBOARD">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="DRUG LIST">
+                <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="DRUG LIST">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="REPORT">
+                <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="REPORT">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
                 </Button>
             </children>
         </HBox>
-        <HBox alignment="CENTER" layoutX="630.0" layoutY="85.0" prefHeight="24.0" prefWidth="125.0" spacing="10.0">
+        <HBox alignment="CENTER" layoutX="630.0" layoutY="85.0" prefHeight="24.0" prefWidth="125.0" spacing="10.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="83.0">
             <children>
                 <ImageView fitHeight="39.0" fitWidth="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
                     <image>
@@ -123,12 +123,17 @@
                 </VBox>
             </children>
         </HBox>
-        <ImageView fitHeight="1.0" fitWidth="797.0" layoutX="122.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Button layoutX="472.0" layoutY="88.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" style="-fx-background-color: transparent;" text="ADD DRUG(S)" AnchorPane.topAnchor="88.0">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+        <ImageView fitHeight="1.0" fitWidth="797.0" layoutX="122.0" layoutY="130.0" nodeOrientation="INHERIT" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
             <image>
                 <Image url="@../assets/Vector%201.png" />
             </image>
         </ImageView>
-      <HBox layoutX="29.0" layoutY="174.0" spacing="30.0">
+      <HBox layoutX="29.0" layoutY="174.0" spacing="30.0" visible="false">
          <children>
             <VBox layoutX="29.0" layoutY="174.0">
                <children>
@@ -244,10 +249,26 @@
             </VBox>
          </children>
       </HBox>
-      <Button layoutX="466.0" layoutY="90.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="119.0" style="-fx-background-color: WHITE;" text="ADD DRUG(S)">
-         <font>
-            <Font name="Arial Bold" size="14.0" />
-         </font>
-      </Button>
+      <AnchorPane layoutX="-3.0" layoutY="133.0" maxHeight="578.0" maxWidth="803.0" minHeight="282.0" minWidth="272.0" prefHeight="448.0" prefWidth="797.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="480.0" prefWidth="797.0" spacing="50.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Drug">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <VBox spacing="10.0">
+                     <children>
+                        <TextField alignment="TOP_LEFT" prefHeight="40.0" prefWidth="275.0" promptText="drugCode" />
+                        <TextField alignment="TOP_LEFT" prefHeight="39.0" prefWidth="273.0" promptText="name" />
+                        <TextField alignment="TOP_LEFT" prefHeight="141.0" prefWidth="271.0" promptText="description" />
+                        <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="286.0" style="-fx-background-color: #1DA1FF;" text="Save" textFill="WHITE" />
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
     </children>
 </AnchorPane>
