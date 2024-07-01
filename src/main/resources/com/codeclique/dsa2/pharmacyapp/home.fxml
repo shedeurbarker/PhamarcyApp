@@ -20,17 +20,17 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="518.0" maxWidth="797.0" minHeight="400.0" minWidth="600.0" prefHeight="518.0" prefWidth="797.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="652.0" maxWidth="986.0" minHeight="400.0" minWidth="600.0" prefHeight="652.0" prefWidth="986.0" style="-fx-background-color: white; -fx-border-color: #01A768;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ToolBar maxWidth="797.0" prefHeight="50.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
             <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy App" translateX="10.0" wrappingWidth="146.5390625">
                <font>
-                  <Font name="Calibri Bold" size="20.0" />
+                  <Font name="System Bold" size="20.0" />
                </font></Text>
-            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="400.0" translateX="12.0">
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="361.0" translateX="30.0">
                <children>
-                  <HBox alignment="CENTER_LEFT" fillHeight="false" maxHeight="39.0" prefHeight="39.0" prefWidth="309.0" spacing="3.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-background-radius: 5px;">
+                  <HBox alignment="CENTER_LEFT" fillHeight="false" maxHeight="39.0" prefHeight="39.0" prefWidth="332.0" spacing="3.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-background-radius: 5px;">
                      <children>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
                            <image>
@@ -62,96 +62,251 @@
                         </ImageView>
                      </children>
                   </HBox>
-                <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #FF5C38;" text="Sale" textFill="WHITE" translateX="20.0">
-                     <font>
-                        <Font name="Arial" size="18.0" />
-                     </font>
-                  </Button>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="0.0" prefWidth="91.0" spacing="10.0" translateX="80.0">
-               <children>
+            <Button maxHeight="15.0" maxWidth="15.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent;" translateX="250.0">
+               <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../assets/Vector%20(1).png" />
-                     </image>
-                     <HBox.margin>
-                        <Insets />
-                     </HBox.margin>
-                  </ImageView>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/Vector%20(2).png" />
+                        <Image url="@../assets/notification.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="50.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/Group.png" />
-                     </image>
-                  </ImageView>
-                  <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="56.0" scaleShape="false" style="-fx-background-color: #1F5A84;">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="32.0" fitWidth="38.0" nodeOrientation="INHERIT">
+               </graphic>
+            </Button>
+            <VBox fillWidth="false" maxHeight="45.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: transparent;" translateX="250.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="150.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../assets/7124045_logout_icon.png" />
+                              <Image url="@../assets/Ellipse%2013.png" />
                            </image>
                         </ImageView>
-                     </graphic>
-                  </Button>
-               </children>
-            </HBox>
-        </items>
-      </ToolBar>
-      <HBox layoutX="20.0" layoutY="173.0" prefHeight="281.0" prefWidth="392.0" style="-fx-border-style: solid; -fx-border-color: #D2CDCD;" />
-      <VBox layoutX="427.0" layoutY="173.0" prefHeight="136.0" prefWidth="330.0" style="-fx-border-style: solid; -fx-border-color: #D2CDCD;" />
-      <VBox layoutX="427.0" layoutY="318.0" prefHeight="136.0" prefWidth="330.0" style="-fx-border-style: solid; -fx-border-color: #D2CDCD;" />
-      <ImageView fitHeight="1.0" fitWidth="797.0" layoutX="122.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-         <image>
-            <Image url="@../assets/Vector%201.png" />
-         </image>
-      </ImageView>
-      <HBox alignment="CENTER" layoutX="-9.0" layoutY="85.0" prefHeight="37.0" prefWidth="307.0" spacing="10.0" AnchorPane.leftAnchor="20.0">
-         <children>
-            <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="DASHBOARD">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="DRUG LIST">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Button>
-            <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="REPORT">
-               <font>
-                  <Font name="Arial Bold" size="14.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" layoutX="630.0" layoutY="85.0" prefHeight="24.0" prefWidth="125.0" spacing="10.0">
-         <children>
-            <ImageView fitHeight="39.0" fitWidth="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../assets/Vector%20(3).png" />
-               </image>
-            </ImageView>
-            <VBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="90.0">
-               <children>
-                  <Text fill="#676565" strokeType="OUTSIDE" strokeWidth="0.0" text="Call us:">
-                     <font>
-                        <Font size="14.0" />
-                     </font></Text>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="054 728 5586">
-                     <font>
-                        <Font name="Arial Bold" size="14.0" />
-                     </font></Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Good Morning">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1 July 2024">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="3.0" fitWidth="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Ellipse%2013.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="14:54:20">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
                </children>
             </VBox>
+        </items>
+      </ToolBar>
+      <VBox alignment="TOP_CENTER" layoutX="3.0" layoutY="74.0" prefHeight="441.0" prefWidth="203.0" spacing="5.0" style="-fx-border-width: 1px; -fx-border-color: #929395; -fx-border-radius: ;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
+         <children>
+            <Button graphicTextGap="15.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Dashboard">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Dashboard_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button graphicTextGap="15.0" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Inventory" translateX="-3.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Inventory_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <Button graphicTextGap="15.0" layoutX="28.0" layoutY="21.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Sales History" translateX="5.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Sales_history_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button graphicTextGap="15.0" layoutX="73.0" layoutY="49.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Reports" translateX="-5.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/Reports_icon.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
          </children>
-      </HBox>
+      </VBox>
+      <VBox alignment="TOP_CENTER" layoutX="205.0" layoutY="78.0" prefHeight="535.0" prefWidth="747.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+         <children>
+            <HBox layoutX="229.0" layoutY="121.0" spacing="10.0">
+               <children>
+                  <VBox alignment="BOTTOM_CENTER" layoutX="229.0" layoutY="121.0" prefHeight="137.0" prefWidth="175.0" spacing="6.0" style="-fx-border-color: #01A768; -fx-border-radius: 4px;">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/guard.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Good" />
+                        <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Inventory Status" translateY="-9.0" wrappingWidth="129.4873046875" />
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: #01A7684D; -fx-border-color: #01A768;">
+                           <children>
+                              <Button contentDisplay="RIGHT" graphicTextGap="6.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="View Detailed Report">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/View_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_CENTER" layoutX="10.0" layoutY="10.0" prefHeight="137.0" prefWidth="175.0" spacing="6.0" style="-fx-border-color: #FED600; -fx-border-radius: 4px;">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/payments_black_24dp%201.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="59,875" />
+                        <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Revenue: " translateY="-9.0" wrappingWidth="129.4873046875" />
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: #FED6004D; -fx-border-color: #FED600;">
+                           <children>
+                              <Button contentDisplay="RIGHT" graphicTextGap="6.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="View Detailed Report">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/View_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_CENTER" layoutX="185.0" layoutY="10.0" prefHeight="137.0" prefWidth="175.0" spacing="6.0" style="-fx-border-color: #03A9F5; -fx-border-radius: 4px;">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/medical_services_black_24dp%202.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="298" />
+                        <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicines Available" translateY="-9.0" wrappingWidth="158.4873046875" />
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: #03A9F54D; -fx-border-color: #03A9F5;">
+                           <children>
+                              <Button contentDisplay="RIGHT" graphicTextGap="6.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="View Inventory">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/View_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox alignment="BOTTOM_CENTER" layoutX="360.0" layoutY="10.0" prefHeight="137.0" prefWidth="175.0" spacing="6.0" style="-fx-border-color: #F0483E; -fx-border-radius: 4px;">
+                     <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/warning_amber_black_24dp%201.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="01" />
+                        <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicine Shortage" translateY="-9.0" wrappingWidth="153.4873046875" />
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: #F0483E4D; -fx-border-color: #F0483E8;">
+                           <children>
+                              <Button contentDisplay="RIGHT" graphicTextGap="6.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Resolve Now">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/View_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" top="60.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
    </children>
 </AnchorPane>
