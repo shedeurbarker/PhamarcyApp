@@ -20,7 +20,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="518.0" maxWidth="797.0" minHeight="400.0" minWidth="600.0" prefHeight="518.0" prefWidth="797.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="565.0" maxWidth="797.0" minHeight="400.0" minWidth="600.0" prefHeight="565.0" prefWidth="797.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <children>
         <ToolBar maxWidth="797.0" prefHeight="74.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <items>
@@ -30,17 +30,39 @@
                     </font></Text>
                 <HBox alignment="CENTER" prefHeight="58.0" prefWidth="400.0" translateX="12.0">
                     <children>
-                        <ImageView fitHeight="37.0" fitWidth="30.0" pickOnBounds="true">
-                            <image>
-                                <Image url="@../assets/Vector%20(2).jpg" />
-                            </image>
+                  <HBox alignment="CENTER_LEFT" fillHeight="false" maxHeight="39.0" prefHeight="39.0" prefWidth="309.0" spacing="3.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-background-radius: 5px;">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/Vector%20(2).jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
                         </ImageView>
-                        <TextField fx:id="textField" prefHeight="37.0" prefWidth="295.0" promptText="Search drugs" style="-fx-background-image: url=&quot;@../assets/hal-gatewood-iPl3q-gEGzY-unsplash.jpg&quot;;" styleClass="txtSearch.getStyleClass().add(&quot;search-field&quot;);">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
+                        <TextField fx:id="textField1" prefHeight="34.0" prefWidth="135.0" promptText="Search drugs" style="-fx-border-width: 0; -fx-border-color: white; -fx-background-color: transparent;" styleClass="txtSearch.getStyleClass().add(&quot;search-field&quot;);">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
                         </TextField>
-                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: #FF5C38;" text="Sale" textFill="WHITE" translateX="20.0">
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Vector%202.jpg" />
+                           </image>
+                        </ImageView>
+                        <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="All categories" textFill="#676565">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Vector%20(3).jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="84.0" style="-fx-background-color: #FF5C38;" text="Sale" textFill="WHITE" translateX="20.0">
                             <font>
                                 <Font name="Arial" size="18.0" />
                             </font>
@@ -83,7 +105,7 @@
                 </HBox>
             </items>
         </ToolBar>
-        <HBox alignment="CENTER" layoutX="-9.0" layoutY="85.0" prefHeight="37.0" prefWidth="307.0" spacing="10.0" AnchorPane.leftAnchor="20.0">
+        <HBox alignment="CENTER" layoutX="-9.0" layoutY="85.0" prefHeight="37.0" prefWidth="317.0" spacing="10.0" AnchorPane.leftAnchor="20.0">
             <children>
                 <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="DASHBOARD">
                     <font>
@@ -95,7 +117,7 @@
                         <Font name="Arial Bold" size="14.0" />
                     </font>
                 </Button>
-                <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="REPORT">
+                <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="REPORTS">
                     <font>
                         <Font name="Arial Bold" size="14.0" />
                     </font>
@@ -130,8 +152,8 @@
         </ImageView>
       <VBox alignment="CENTER" fillWidth="false" layoutX="90.0" layoutY="196.0" prefHeight="271.0" prefWidth="625.0" spacing="30.0" style="-fx-border-color: D2CDCD; -fx-border-style: solid; -fx-border-radius: 15px;">
          <children>
-            <HBox prefHeight="60.0" prefWidth="405.0" style="-fx-border-style: solid; -fx-border-radius: 10px;" />
-            <HBox prefHeight="61.0" prefWidth="404.0" style="-fx-border-style: solid; -fx-border-radius: 10px;" />
+            <TextField prefHeight="58.0" prefWidth="389.0" promptText="E-Mail Address" style="-fx-border-radius: 10px; -fx-border-color: #000000; -fx-background-radius: 10px; -fx-border-width: 1px;" />
+            <TextField prefHeight="58.0" prefWidth="389.0" promptText="Password" style="-fx-border-radius: 10px; -fx-border-color: #000000; -fx-background-radius: 10px;" />
          </children>
       </VBox>
     </children>
