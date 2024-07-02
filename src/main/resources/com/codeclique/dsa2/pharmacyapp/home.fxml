@@ -20,7 +20,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="652.0" maxWidth="986.0" minHeight="400.0" minWidth="600.0" prefHeight="652.0" prefWidth="986.0" style="-fx-background-color: white; -fx-border-color: #01A768;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="755.0" maxWidth="986.0" minHeight="400.0" minWidth="600.0" prefHeight="755.0" prefWidth="986.0" style="-fx-background-color: white; -fx-border-color: #01A768;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <ToolBar maxWidth="797.0" prefHeight="50.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -165,7 +165,7 @@
                </graphic></Button>
          </children>
       </VBox>
-      <VBox alignment="TOP_CENTER" layoutX="205.0" layoutY="78.0" prefHeight="535.0" prefWidth="747.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+      <VBox alignment="TOP_CENTER" fillWidth="false" layoutX="205.0" layoutY="78.0" prefHeight="535.0" prefWidth="747.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
          <children>
             <HBox layoutX="229.0" layoutY="121.0" spacing="10.0">
                <children>
@@ -303,8 +303,259 @@
                   </VBox>
                </children>
                <VBox.margin>
-                  <Insets left="20.0" top="60.0" />
+                  <Insets left="10.0" top="60.0" />
                </VBox.margin>
+            </HBox>
+            <HBox prefHeight="152.0" prefWidth="727.0" spacing="20.0">
+               <children>
+                  <VBox fillWidth="false" prefHeight="152.0" prefWidth="346.0" style="-fx-border-color: #1D242E4D; -fx-border-radius: 4px;">
+                     <children>
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="45.0" prefWidth="337.0" spacing="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Button contentDisplay="RIGHT" graphicTextGap="10.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Go to Configuration" textFill="#1d242e">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/View_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="1.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Line%205.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="337.0" spacing="20.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="80.0" prefWidth="155.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="298" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Medicines">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" layoutX="93.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="24" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicine Groups">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fillWidth="false" layoutX="10.0" layoutY="10.0" prefHeight="152.0" prefWidth="355.0" style="-fx-border-color: #1D242E4D; -fx-border-radius: 4px;">
+                     <children>
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="45.0" prefWidth="337.0" spacing="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Button contentDisplay="RIGHT" graphicTextGap="10.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Go to Configuration" textFill="#1d242e">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/View_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="1.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Line%205.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="337.0" spacing="20.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="80.0" prefWidth="155.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="298" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Medicines">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" layoutX="93.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="24" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicine Groups">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="38.0" layoutY="247.0" prefHeight="152.0" prefWidth="727.0" spacing="20.0">
+               <children>
+                  <VBox fillWidth="false" prefHeight="152.0" prefWidth="346.0" style="-fx-border-color: #1D242E4D; -fx-border-radius: 4px;">
+                     <children>
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="45.0" prefWidth="337.0" spacing="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Button contentDisplay="RIGHT" graphicTextGap="10.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Go to Configuration" textFill="#1d242e">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/View_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="1.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Line%205.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="337.0" spacing="20.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="80.0" prefWidth="155.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="298" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Medicines">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" layoutX="93.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="24" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicine Groups">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox fillWidth="false" layoutX="10.0" layoutY="10.0" prefHeight="152.0" prefWidth="355.0" style="-fx-border-color: #1D242E4D; -fx-border-radius: 4px;">
+                     <children>
+                        <HBox alignment="CENTER" fillHeight="false" prefHeight="45.0" prefWidth="337.0" spacing="100.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Text>
+                              <Button contentDisplay="RIGHT" graphicTextGap="10.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Go to Configuration" textFill="#1d242e">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <graphic>
+                                    <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../assets/View_icon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                                 <padding>
+                                    <Insets bottom="2.0" />
+                                 </padding>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <ImageView fitHeight="1.0" fitWidth="355.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Line%205.png" />
+                           </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" prefHeight="80.0" prefWidth="337.0" spacing="20.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="80.0" prefWidth="155.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="298" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Medicines">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER_LEFT" fillWidth="false" layoutX="93.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="24" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicine Groups">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
             </HBox>
          </children>
       </VBox>
