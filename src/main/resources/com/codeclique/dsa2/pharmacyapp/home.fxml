@@ -312,7 +312,7 @@
                      <children>
                         <HBox alignment="CENTER" fillHeight="false" prefHeight="45.0" prefWidth="337.0" spacing="100.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
@@ -372,7 +372,7 @@
                      <children>
                         <HBox alignment="CENTER" fillHeight="false" prefHeight="45.0" prefWidth="337.0" spacing="100.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Quick Report">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
@@ -403,8 +403,8 @@
                            <children>
                               <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="80.0" prefWidth="155.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="298" />
-                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Medicines">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="70,856" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Qty of Medicines Sold">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -413,8 +413,8 @@
                               </VBox>
                               <VBox alignment="CENTER_LEFT" fillWidth="false" layoutX="93.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="24" />
-                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicine Groups">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="5,288" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Invoices Generated">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -439,12 +439,12 @@
                      <children>
                         <HBox alignment="CENTER" fillHeight="false" prefHeight="45.0" prefWidth="337.0" spacing="100.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="My Pharmacy">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
                               </Text>
-                              <Button contentDisplay="RIGHT" graphicTextGap="10.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Go to Configuration" textFill="#1d242e">
+                              <Button contentDisplay="RIGHT" graphicTextGap="10.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="159.0" style="-fx-background-color: transparent;" text="Go to User Management" textFill="#1d242e">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -470,8 +470,8 @@
                            <children>
                               <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="80.0" prefWidth="155.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="298" />
-                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Medicines">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="04" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Suppliers">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -480,8 +480,8 @@
                               </VBox>
                               <VBox alignment="CENTER_LEFT" fillWidth="false" layoutX="93.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="24" />
-                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicine Groups">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="05" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Users">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -499,12 +499,12 @@
                      <children>
                         <HBox alignment="CENTER" fillHeight="false" prefHeight="45.0" prefWidth="337.0" spacing="100.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Inventory">
+                              <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 600;" text="Customers">
                                  <HBox.margin>
                                     <Insets left="10.0" />
                                  </HBox.margin>
                               </Text>
-                              <Button contentDisplay="RIGHT" graphicTextGap="10.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Go to Configuration" textFill="#1d242e">
+                              <Button contentDisplay="RIGHT" graphicTextGap="10.0" maxHeight="32.0" maxWidth="170.0" minHeight="25.0" minWidth="142.71" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: transparent;" text="Go to Customers Page" textFill="#1d242e">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -531,7 +531,7 @@
                               <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="80.0" prefWidth="155.0">
                                  <children>
                                     <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="298" />
-                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Medicines">
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Total no of Customers">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
@@ -540,8 +540,8 @@
                               </VBox>
                               <VBox alignment="CENTER_LEFT" fillWidth="false" layoutX="93.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0">
                                  <children>
-                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="24" />
-                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Medicine Groups">
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 700;" text="Tramadol" />
+                                    <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: 500;" text="Frequently bought item">
                                        <font>
                                           <Font size="14.0" />
                                        </font>
