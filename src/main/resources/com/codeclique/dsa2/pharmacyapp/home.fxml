@@ -112,57 +112,91 @@
             </VBox>
         </items>
       </ToolBar>
-      <VBox alignment="TOP_CENTER" layoutX="3.0" layoutY="74.0" prefHeight="441.0" prefWidth="203.0" spacing="5.0" style="-fx-border-width: 1px; -fx-border-color: #929395; -fx-border-radius: ;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
+      <VBox alignment="TOP_CENTER" layoutX="3.0" layoutY="74.0" prefHeight="441.0" prefWidth="203.0" spacing="5.0" style="-fx-border-width: 1px; -fx-border-color: #929395;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
          <children>
-            <Button graphicTextGap="15.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Dashboard">
-               <VBox.margin>
-                  <Insets top="10.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="14.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/Dashboard_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button graphicTextGap="15.0" layoutX="73.0" layoutY="10.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Inventory" translateX="-3.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/Inventory_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic></Button>
-            <Button graphicTextGap="15.0" layoutX="28.0" layoutY="21.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Sales History" translateX="5.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/Sales_history_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-            </Button>
-            <Button graphicTextGap="15.0" layoutX="73.0" layoutY="49.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Reports" translateX="-5.0">
-               <font>
-                  <Font size="14.0" />
-               </font>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../assets/Reports_icon.png" />
-                     </image>
-                  </ImageView>
-               </graphic></Button>
+            <VBox prefHeight="178.0" prefWidth="179.0">
+               <children>
+                  <Button alignment="CENTER" graphicTextGap="15.0" maxWidth="167.0" minWidth="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Dashboard" translateX="-5.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Dashboard_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Button>
+                  <MenuButton alignment="CENTER" graphicTextGap="15.0" maxWidth="167.0" minWidth="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="fx-background-radius: 20; -fx-background-color: transparent;" text="Inventory">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Inventory_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="List of Medicines" />
+                        <MenuItem mnemonicParsing="false" text="Medicine Groups" />
+                     </items>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </MenuButton>
+                  <Button alignment="CENTER" graphicTextGap="15.0" maxWidth="167.0" minWidth="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Sales History" translateX="-2.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Sales_history_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Button alignment="CENTER" graphicTextGap="15.0" maxWidth="176.0" minWidth="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="176.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Reports" translateX="-13.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Reports_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+            </VBox>
          </children>
       </VBox>
       <VBox alignment="TOP_CENTER" fillWidth="false" layoutX="205.0" layoutY="78.0" prefHeight="535.0" prefWidth="747.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">

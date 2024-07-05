@@ -20,113 +20,304 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="518.0" maxWidth="797.0" minHeight="400.0" minWidth="600.0" prefHeight="518.0" prefWidth="797.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-    <children>
-        <ToolBar maxWidth="797.0" prefHeight="74.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-            <items>
-                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy App" translateX="10.0" wrappingWidth="146.5390625">
-                    <font>
-                        <Font name="Calibri Bold" size="20.0" />
-                    </font></Text>
-                <HBox alignment="CENTER" prefHeight="58.0" prefWidth="400.0" translateX="12.0">
-                    <children>
-                        <ImageView fitHeight="37.0" fitWidth="30.0" pickOnBounds="true">
-                            <image>
-                                <Image url="@../assets/Vector%20(2).jpg" />
-                            </image>
+<AnchorPane maxHeight="755.0" maxWidth="986.0" minHeight="400.0" minWidth="600.0" prefHeight="755.0" prefWidth="986.0" style="-fx-background-color: white; -fx-border-color: #01A768;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ToolBar maxWidth="797.0" prefHeight="50.0" prefWidth="797.0" style="-fx-background-color: #1F5A84;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Pharmacy App" translateX="10.0" wrappingWidth="146.5390625">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font></Text>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="361.0" translateX="30.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" fillHeight="false" maxHeight="39.0" prefHeight="39.0" prefWidth="332.0" spacing="3.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-background-radius: 5px;">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/Vector%20(2).jpg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
                         </ImageView>
-                        <TextField fx:id="textField" prefHeight="37.0" prefWidth="310.0" promptText="Search drugs" style="-fx-background-image: url=&quot;@../assets/hal-gatewood-iPl3q-gEGzY-unsplash.jpg&quot;;" styleClass="txtSearch.getStyleClass().add(&quot;search-field&quot;);">
-                            <font>
-                                <Font size="14.0" />
-                            </font>
+                        <TextField fx:id="textField1" prefHeight="34.0" prefWidth="135.0" promptText="Search drugs" style="-fx-border-width: 0; -fx-border-color: white; -fx-background-color: transparent;" styleClass="txtSearch.getStyleClass().add(&quot;search-field&quot;);">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
                         </TextField>
-                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="90.0" style="-fx-background-color: #FF5C38;" text="Sale" textFill="WHITE" translateX="20.0">
-                            <font>
-                                <Font name="Arial" size="18.0" />
-                            </font>
-                        </Button>
-                    </children>
-                </HBox>
-                <HBox alignment="CENTER" prefHeight="0.0" prefWidth="91.0" spacing="10.0" translateX="80.0">
-                    <children>
                         <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../assets/Vector%20(1).png" />
-                            </image>
-                            <HBox.margin>
-                                <Insets />
-                            </HBox.margin>
+                           <image>
+                              <Image url="@../assets/Vector%202.jpg" />
+                           </image>
                         </ImageView>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="10.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../assets/Vector%20(2).png" />
-                            </image>
-                        </ImageView>
-                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="50.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../assets/Group.png" />
-                            </image>
-                        </ImageView>
-                        <Button alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="56.0" scaleShape="false" style="-fx-background-color: #1F5A84;">
-                            <graphic>
-                                <ImageView fitHeight="32.0" fitWidth="38.0" nodeOrientation="INHERIT">
-                                    <image>
-                                        <Image url="@../assets/7124045_logout_icon.png" />
-                                    </image>
-                                </ImageView>
-                            </graphic>
-                            <font>
-                                <Font size="14.0" />
-                            </font>
+                        <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="104.0" style="-fx-background-color: transparent;" text="All categories" textFill="#676565">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
                         </Button>
-                    </children>
-                </HBox>
-            </items>
-        </ToolBar>
-        <HBox alignment="CENTER" layoutX="-9.0" layoutY="85.0" prefHeight="37.0" prefWidth="307.0" spacing="10.0" AnchorPane.leftAnchor="20.0">
-            <children>
-                <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="DASHBOARD">
-                    <font>
-                        <Font name="Arial Bold" size="14.0" />
-                    </font>
-                </Button>
-                <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="DRUG LIST">
-                    <font>
-                        <Font name="Arial Bold" size="14.0" />
-                    </font>
-                </Button>
-                <Button mnemonicParsing="false" style="-fx-background-color: WHITE;" text="REPORT">
-                    <font>
-                        <Font name="Arial Bold" size="14.0" />
-                    </font>
-                </Button>
-            </children>
-        </HBox>
-        <HBox alignment="CENTER" layoutX="630.0" layoutY="85.0" prefHeight="24.0" prefWidth="125.0" spacing="10.0">
-            <children>
-                <ImageView fitHeight="39.0" fitWidth="34.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@../assets/Vector%20(3).png" />
-                    </image>
-                </ImageView>
-                <VBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="90.0">
-                    <children>
-                        <Text fill="#676565" strokeType="OUTSIDE" strokeWidth="0.0" text="Call us:">
-                            <font>
-                                <Font size="14.0" />
-                            </font></Text>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="054 728 5586">
-                            <font>
-                                <Font name="Arial Bold" size="14.0" />
-                            </font></Text>
-                    </children>
-                </VBox>
-            </children>
-        </HBox>
-        <ImageView fitHeight="1.0" fitWidth="797.0" layoutX="122.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-            <image>
-                <Image url="@../assets/Vector%201.png" />
-            </image>
-        </ImageView>
-    </children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Vector%20(3).jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Button maxHeight="15.0" maxWidth="15.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="15.0" style="-fx-background-color: transparent;" translateX="250.0">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/notification.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <VBox fillWidth="false" maxHeight="45.0" prefHeight="45.0" prefWidth="150.0" style="-fx-background-color: transparent;" translateX="250.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="150.0" spacing="10.0">
+                     <children>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Ellipse%2013.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Good Morning">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="5.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1 July 2024">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="3.0" fitWidth="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Ellipse%2013.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="14:54:20">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+        </items>
+      </ToolBar>
+      <VBox alignment="TOP_CENTER" layoutX="3.0" layoutY="74.0" prefHeight="441.0" prefWidth="203.0" spacing="5.0" style="-fx-border-width: 1px; -fx-border-color: #929395;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="74.0">
+         <children>
+            <VBox prefHeight="178.0" prefWidth="179.0">
+               <children>
+                  <Button alignment="CENTER" graphicTextGap="15.0" maxWidth="167.0" minWidth="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Dashboard" translateX="-5.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Dashboard_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <MenuButton alignment="CENTER" graphicTextGap="15.0" maxWidth="167.0" minWidth="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="fx-background-radius: 20; -fx-background-color: transparent;" text="Inventory">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="List of Medicines" />
+                      <MenuItem mnemonicParsing="false" text="Medicine Groups" />
+                    </items>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Inventory_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </MenuButton>
+                  <Button alignment="CENTER" graphicTextGap="15.0" maxWidth="167.0" minWidth="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="167.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Sales History" translateX="-2.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Sales_history_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="CENTER" graphicTextGap="15.0" maxWidth="176.0" minWidth="167.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="176.0" style="-fx-background-radius: 20; -fx-background-color: transparent;" text="Reports" translateX="-13.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Reports_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox fillWidth="false" layoutX="207.0" layoutY="75.0" prefHeight="535.0" prefWidth="747.0" spacing="10.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="207.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="769.0" spacing="250.0">
+               <children>
+                  <VBox prefHeight="80.0" prefWidth="100.0" spacing="5.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" spacing="10.0">
+                           <children>
+                              <Text fill="#1d212680" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/ket.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1b1f2480" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Medicines">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                              <ImageView fitHeight="10.0" fitWidth="10.0" layoutX="102.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/ket.png" />
+                                 </image>
+                              </ImageView>
+                              <Text fill="#1b1f24" layoutX="119.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add New Medicine">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="*All fields are mandatory, except mentioned as (optional).">
+                           <font>
+                              <Font size="14.0" />
+                           </font></Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox fillHeight="false" prefHeight="83.0" prefWidth="682.0" spacing="25.0">
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="74.0" prefWidth="276.0">
+                     <children>
+                        <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicine Name" />
+                        <TextField style="-fx-border-radius: 4px;" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="74.0" prefWidth="276.0">
+                     <children>
+                        <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicine ID" />
+                        <TextField style="-fx-border-radius: 4px;" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox fillHeight="false" prefHeight="83.0" prefWidth="682.0" spacing="25.0">
+               <children>
+                  <VBox prefHeight="74.0" prefWidth="276.0">
+                     <children>
+                        <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Medicine Group" />
+                        <MenuButton maxHeight="39.0" maxWidth="276.0" minHeight="39.0" minWidth="276.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="276.0" style="-fx-background-color: transparent; -fx-border-color: #1D242E; -fx-border-width: 0.2px; -fx-border-radius: 4px;" text="- Select Group -">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="74.0" prefWidth="276.0">
+                     <children>
+                        <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity in Number" />
+                        <TextField maxHeight="39.0" minHeight="39.0" prefHeight="39.0" style="-fx-border-radius: 4px; -fx-border-width: 0.2px; -fx-border-color: #1D242E;" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox prefHeight="144.0" prefWidth="579.0">
+               <children>
+                  <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="How to Use" />
+                  <TextField prefHeight="112.0" prefWidth="579.0" style="-fx-border-radius: 4px;" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="145.0" prefWidth="579.0">
+               <children>
+                  <Text fill="#1d242e" strokeType="OUTSIDE" strokeWidth="0.0" text="Side Effects" />
+                  <TextField prefHeight="115.0" prefWidth="579.0" style="-fx-border-radius: 4px;" />
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </VBox>
+            <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="149.0" style="-fx-background-color: #F0483E; -fx-border-radius: 4px;" text="Save Details" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
 </AnchorPane>
