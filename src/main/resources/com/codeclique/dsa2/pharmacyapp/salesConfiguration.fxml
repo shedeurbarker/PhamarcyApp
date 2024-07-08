@@ -187,15 +187,15 @@
             </VBox>
          </children>
       </VBox>
-      <VBox alignment="TOP_CENTER" fillWidth="false" layoutX="205.0" layoutY="78.0" prefHeight="535.0" prefWidth="747.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
+      <VBox fillWidth="false" layoutX="205.0" layoutY="78.0" prefHeight="535.0" prefWidth="747.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="74.0">
          <children>
-            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="769.0" spacing="250.0">
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="769.0" spacing="344.0">
                <children>
                   <VBox prefHeight="80.0" prefWidth="100.0" spacing="5.0">
                      <children>
                         <HBox alignment="CENTER_LEFT" spacing="10.0">
                            <children>
-                              <Text fill="#1d212680" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory">
+                              <Text fill="#1d212680" strokeType="OUTSIDE" strokeWidth="0.0" text="Reports">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
@@ -205,7 +205,7 @@
                                     <Image url="@../assets/ket.png" />
                                  </image>
                               </ImageView>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="List of Medicines(298)">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Report">
                                  <font>
                                     <Font name="System Bold" size="18.0" />
                                  </font>
@@ -221,212 +221,137 @@
                         <Insets left="20.0" />
                      </HBox.margin>
                   </VBox>
-                  <Button graphicTextGap="6.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="155.0" style="-fx-background-color: #F0483E;" text="Add New Item" textFill="WHITE">
-                     <graphic>
-                        <ImageView fitHeight="10.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../assets/Add_button.png" />
-                           </image></ImageView>
-                     </graphic>
-                  </Button>
+                  <MenuButton mnemonicParsing="false" prefHeight="45.0" style="-fx-background-color: transparent; -fx-border-color: #1D242E; -fx-border-radius: 4px;" text="Download Report">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </MenuButton>
                </children>
                <VBox.margin>
                   <Insets left="10.0" top="20.0" />
                </VBox.margin>
             </HBox>
-            <HBox alignment="CENTER_LEFT" fillHeight="false" maxWidth="738.0" minWidth="671.0" prefHeight="68.0" prefWidth="731.0" spacing="282.0">
-               <children>
-                  <HBox alignment="CENTER_LEFT" maxHeight="38.0" minHeight="38.0" prefHeight="38.0" prefWidth="262.0" style="-fx-background-color: transparent; -fx-border-radius: 4px; -fx-background-radius: 4px; -fx-border-color: #1D242E;">
-                     <children>
-                        <TextField prefHeight="38.0" prefWidth="229.0" promptText="Search Medicine Inventory" style="-fx-background-color: transparent; -fx-background-radius: 4px; -fx-border-radius: 4px;">
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </TextField>
-                        <ImageView fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../assets/search2.png" />
-                           </image>
-                           <HBox.margin>
-                              <Insets right="5.0" />
-                           </HBox.margin>
-                        </ImageView>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER_LEFT" maxHeight="38.0" maxWidth="247.0" minHeight="38.0" minWidth="176.0" prefHeight="38.0" prefWidth="178.0" spacing="10.0" translateX="-24.0">
-                     <children>
-                        <ImageView fitHeight="13.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../assets/filter.png" />
-                           </image>
-                        </ImageView>
-                        <MenuButton contentDisplay="CENTER" maxHeight="38.0" minHeight="38.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="191.0" style="-fx-background-color: transparent; -fx-border-color: #1D242E;" text="-Select Group-">
-                          <items>
-                            <MenuItem mnemonicParsing="false" text="Action 1" />
-                            <MenuItem mnemonicParsing="false" text="Action 2" />
-                          </items>
-                           <font>
-                              <Font size="14.0" />
-                           </font>
-                        </MenuButton>
-                     </children>
-                  </HBox>
-               </children>
+            <HBox alignment="CENTER_LEFT" fillHeight="false" maxWidth="738.0" minWidth="671.0" prefHeight="68.0" prefWidth="731.0" spacing="40.0">
                <VBox.margin>
                   <Insets left="15.0" />
                </VBox.margin>
-            </HBox>
-            <VBox fillWidth="false" prefHeight="150.0" prefWidth="699.0" style="-fx-border-radius: 4px; -fx-background-radius: 4px; -fx-border-color: #1D242E4D;">
                <children>
-                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="734.0" spacing="180.0" style="-fx-border-color: #1D242E4D;">
+                  <VBox prefHeight="68.0" prefWidth="226.0">
                      <children>
-                        <HBox alignment="CENTER_LEFT" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Range" />
+                        <HBox prefHeight="41.0" prefWidth="219.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Group Name">
+                              <MenuButton mnemonicParsing="false" prefHeight="39.0" prefWidth="228.0" style="-fx-background-color: transparent; -fx-border-color: #1D242E; -fx-border-radius: 4px;" text="- Select Range -">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
-                              </Text>
-                              <VBox alignment="CENTER" prefHeight="44.0" prefWidth="23.0" spacing="2.0">
-                                 <children>
-                                    <ImageView fitHeight="8.0" fitWidth="8.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../assets/up.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="8.0" fitWidth="8.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../assets/down.png" />
-                                       </image>
-                                    </ImageView>
-                                 </children>
-                              </VBox>
-                           </children>
-                           <HBox.margin>
-                              <Insets left="15.0" />
-                           </HBox.margin>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="Action 1" />
+                                    <MenuItem mnemonicParsing="false" text="Action 2" />
+                                 </items>
+                              </MenuButton>
+                           </children></HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="199.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Medicine Group" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="No of Medicines">
+                              <MenuButton mnemonicParsing="false" prefHeight="39.0" prefWidth="201.0" style="-fx-background-color: transparent; -fx-border-color: #1D242E; -fx-border-radius: 4px;" text="- Select Group -">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                                </items>
                                  <font>
                                     <Font size="14.0" />
                                  </font>
-                              </Text>
-                              <VBox alignment="CENTER" prefHeight="44.0" prefWidth="23.0" spacing="2.0">
-                                 <children>
-                                    <ImageView fitHeight="8.0" fitWidth="8.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../assets/up.png" />
-                                       </image>
-                                    </ImageView>
-                                    <ImageView fitHeight="8.0" fitWidth="8.0" layoutX="17.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                                       <image>
-                                          <Image url="@../assets/down.png" />
-                                       </image>
-                                    </ImageView>
-                                 </children>
-                              </VBox>
-                           </children>
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" layoutX="359.0" layoutY="22.0" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Action">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
+                              </MenuButton>
                            </children>
                         </HBox>
                      </children>
-                  </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="47.0" prefWidth="734.0" spacing="200.0" style="-fx-border-color: #1D242E4D;">
+                  </VBox>
+                  <VBox layoutX="309.0" layoutY="10.0" prefHeight="68.0" prefWidth="213.0">
                      <children>
-                        <HBox alignment="CENTER_LEFT" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="User name" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Diabetes">
+                              <MenuButton mnemonicParsing="false" prefHeight="39.0" prefWidth="218.0" style="-fx-background-color: transparent; -fx-border-color: #1D242E; -fx-border-radius: 4px;" text="- Select User name -">
+                                <items>
+                                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                                  <MenuItem mnemonicParsing="false" text="Action 2" />
+                                </items>
                                  <font>
                                     <Font size="14.0" />
                                  </font>
-                              </Text>
-                           </children>
-                           <HBox.margin>
-                              <Insets left="15.0" />
-                           </HBox.margin>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="02">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                           <HBox.margin>
-                              <Insets />
-                           </HBox.margin>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="View Full Detail">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../assets/View_icon.png" />
-                                 </image>
-                              </ImageView>
+                              </MenuButton>
                            </children>
                         </HBox>
-                     </children></HBox>
-                  <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="57.0" prefHeight="55.0" prefWidth="697.0" spacing="200.0" style="-fx-border-color: #1D242E4D;">
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <VBox prefHeight="385.0" prefWidth="358.0" style="-fx-border-color: #1D242E; -fx-border-radius: 4px;">
+                     <VBox.margin>
+                        <Insets left="30.0" top="10.0" />
+                     </VBox.margin>
                      <children>
-                        <HBox alignment="CENTER_LEFT" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
+                        <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="360.0">
                            <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Diabetes">
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sales Made">
                                  <font>
-                                    <Font size="14.0" />
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fitHeight="11.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Line%205.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <VBox fillWidth="false" layoutX="10.0" layoutY="10.0" prefHeight="385.0" prefWidth="68.0" />
+                  <VBox layoutX="10.0" layoutY="10.0" minWidth="285.0" prefHeight="385.0" prefWidth="285.0" style="-fx-border-color: #1D242E; -fx-border-radius: 4px;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="360.0" spacing="120.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Order ID">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date &amp; Time">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
                                  </font>
                               </Text>
                            </children>
-                           <HBox.margin>
-                              <Insets left="15.0" />
-                           </HBox.margin>
                         </HBox>
-                        <HBox alignment="CENTER_LEFT" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="02">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                           </children>
-                        </HBox>
-                        <HBox alignment="CENTER_LEFT" maxHeight="22.0" minHeight="22.0" prefHeight="22.0" prefWidth="80.0" spacing="5.0">
-                           <children>
-                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="View Full Detail">
-                                 <font>
-                                    <Font size="14.0" />
-                                 </font>
-                              </Text>
-                              <ImageView fitHeight="10.0" fitWidth="10.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../assets/View_icon.png" />
-                                 </image>
-                              </ImageView>
-                           </children>
-                        </HBox>
-                     </children></HBox>
+                        <ImageView fitHeight="11.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Line%205.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
                </children>
                <VBox.margin>
-                  <Insets left="15.0" right="30.0" />
+                  <Insets left="30.0" top="10.0" />
                </VBox.margin>
-            </VBox>
+            </HBox>
          </children>
       </VBox>
    </children>
