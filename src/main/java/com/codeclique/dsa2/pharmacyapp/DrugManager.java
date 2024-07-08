@@ -15,7 +15,7 @@ public class DrugManager {
     }
 
     public boolean addDrug(Drug newDrug) throws SQLException {
-        // save new drug added into database
+        // save new drug and added into database
         Connection connection = dbQueries.openConnection();
         PreparedStatement statement = connection
                 .prepareStatement("INSERT INTO drugs SET drugCode = ?, name = ?, description = ?, price = ?, stockLevel = ?, date = ?");
