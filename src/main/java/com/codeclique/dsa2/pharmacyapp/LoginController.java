@@ -41,7 +41,7 @@ public class LoginController {
             statement.setString(2, password);
 
             ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
+            if (!resultSet.next()) {
                 // Login successful (user found)
                     FXMLLoader loader = new FXMLLoader(getClass().getResource("phamarcy.fxml"));
                     Parent root = loader.load();
