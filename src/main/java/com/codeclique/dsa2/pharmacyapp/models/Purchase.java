@@ -3,9 +3,7 @@ This class represents a purchase record with details
 like date, quantity, amount, and optional customer information.
  */
 
-package com.codeclique.dsa2.pharmacyapp;
-
-import java.time.LocalDate;
+package com.codeclique.dsa2.pharmacyapp.models;
 
 public class Purchase {
     private int quantity; // Purchased quantity

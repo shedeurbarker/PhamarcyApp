@@ -1,4 +1,6 @@
-package com.codeclique.dsa2.pharmacyapp;
+package com.codeclique.dsa2.pharmacyapp.managers;
+
+import com.codeclique.dsa2.pharmacyapp.models.Supplier;
 
 import java.util.ArrayList;
 import java.util.HashMap;

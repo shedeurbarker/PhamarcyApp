@@ -1,8 +1,9 @@
-package com.codeclique.dsa2.pharmacyapp;
+package com.codeclique.dsa2.pharmacyapp.managers;
 
 //import javafx.collections.FXCollections;//new
 //import javafx.collections.ObservableList;//new
 
+import com.codeclique.dsa2.pharmacyapp.InsufficientStockException;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;

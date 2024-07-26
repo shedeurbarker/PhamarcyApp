@@ -14,4 +14,8 @@ module com.codeclique.dsa2.pharmacyapp {
 
     opens com.codeclique.dsa2.pharmacyapp to javafx.fxml;
     exports com.codeclique.dsa2.pharmacyapp;
+    exports com.codeclique.dsa2.pharmacyapp.managers;
+    opens com.codeclique.dsa2.pharmacyapp.managers to javafx.fxml;
+    exports com.codeclique.dsa2.pharmacyapp.models;
+    opens com.codeclique.dsa2.pharmacyapp.models to javafx.fxml;
 }

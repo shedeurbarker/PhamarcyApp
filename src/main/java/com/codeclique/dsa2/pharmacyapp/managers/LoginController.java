@@ -1,5 +1,6 @@
-package com.codeclique.dsa2.pharmacyapp;
+package com.codeclique.dsa2.pharmacyapp.managers;
 
+import com.codeclique.dsa2.pharmacyapp.DBQueries;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

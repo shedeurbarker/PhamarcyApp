@@ -1,4 +1,4 @@
-package com.codeclique.dsa2.pharmacyapp;
+package com.codeclique.dsa2.pharmacyapp.models;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,5 @@
-package com.codeclique.dsa2.pharmacyapp;
+package com.codeclique.dsa2.pharmacyapp.managers;
+import com.codeclique.dsa2.pharmacyapp.models.Drug;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;

@@ -1,4 +1,9 @@
-package com.codeclique.dsa2.pharmacyapp;
+package com.codeclique.dsa2.pharmacyapp.managers;
+
+import com.codeclique.dsa2.pharmacyapp.DBQueries;
+import com.codeclique.dsa2.pharmacyapp.models.Drug;
+import com.codeclique.dsa2.pharmacyapp.InsufficientStockException;
+import com.codeclique.dsa2.pharmacyapp.models.Sale;
 
 import java.sql.*;
 import java.time.LocalDate;
@@ -14,7 +19,7 @@ public class DrugManager {
         drugs = new HashMap<>();
     }
 
-    public boolean addDrug(Drug newDrug) throws SQLException {
+    public void addDrug(Drug newDrug) throws SQLException {
         // save new drug added into database
         Connection connection = dbQueries.openConnection();
         PreparedStatement statement = connection
@@ -31,14 +36,13 @@ public class DrugManager {
         if(result.next()) {
             // successfully added to database - add drug to stack
             drugs.put(newDrug.getDrugCode(), newDrug);
-            return true;
+            return;
             // ! todo - implement UI update
         }
         else {
             // ! todo - implement UI error alert
             System.out.println("to be replaced by a visual response");
         }
-        return false;
     }
 
     public List<Drug> searchDrugs(String searchTerm) {
