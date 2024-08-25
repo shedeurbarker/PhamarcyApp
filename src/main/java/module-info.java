@@ -1,4 +1,4 @@
-module com.codeclique.dsa2.pharmacyapp {
+module com.codeclique.dsa.pharmacyapp {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;

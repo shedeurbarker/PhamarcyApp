@@ -44,7 +44,7 @@ public class LoginController {
             ResultSet resultSet = statement.executeQuery();
             if (!resultSet.next()) {
                 // Login successful (user found)
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("phamarcy.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("pharmacy.fxml"));
                     Parent root = loader.load();
                     Stage stage = (Stage) loginButton.getScene().getWindow();
                     stage.setScene(new Scene(root));
