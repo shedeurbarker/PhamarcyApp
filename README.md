@@ -1,14 +1,17 @@
 GROUP MEMBERS - 16
+
 10939908 - Boafo Tabitha Amanor
 10979761- Boi Danquah Bertram
 10945168 - Dorcas Seshie Afi Mawutor
 10957160 - Peter Nana Asiedu-Gyan
 10978392 - Eyifa David Kofi
 10975107 - Donald Fifonsi
-10981589 - Anthony Barker
-Semester Project – PHAMARCY APP
-1. Introduction
-The Pharmacy Management Application is designed to streamline pharmacy operations, including inventory management, sales, and customer records. The application utilizes essential data structures such as Stacks, Lists, and Queues, and is backed by a MySQL database for data storage.
+10981589 - Anthony Barker (Leader)
+
+**Semester Project – PHAMARCY APP**
+
+1. Introduction 
+- The Pharmacy Management Application is designed to streamline pharmacy operations, including inventory management, sales, and customer records. The application utilizes essential data structures such as Stacks, Lists, and Queues, and is backed by a MySQL database for data storage.
 2. Objectives
 •
 Efficiently manage pharmacy inventory using data structures.
